@@ -19,3 +19,10 @@
 //     });
 //   });
   
+
+// Set current year dynamically
+document.addEventListener("DOMContentLoaded", () => {
+    const yearSpan = document.getElementById("year");
+    yearSpan.textContent = new Date().getFullYear();
+  });
+  

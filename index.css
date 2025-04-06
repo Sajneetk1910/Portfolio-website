@@ -75,7 +75,7 @@ li a {
 .btn-1 {
   color: black;
   padding: 8px;
-  margin-top: -4px;
+  margin-top: -3px;
   border-radius: 10rem;
   border: 2px solid black;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -85,7 +85,7 @@ li a {
 }
 
 .t1 {
-  font-size: 32px;
+  font-size: 38px;
   font-weight: 700;
   margin-top: 10%;
   text-align: center;
@@ -109,8 +109,8 @@ li a {
 
 .btn-2 {
   float: right;
-  margin-right: 78%;
-  margin-top: 30px;
+  margin-right: 79%;
+  margin-top:1px;
   font-size: 19px;
   font-weight: 500;
   padding: 10px;
@@ -201,7 +201,7 @@ li a {
 .skills-container .skills-box {
   flex: 1rem 1rem 20rem;
   margin-top: 40px;
-  padding:2rem;
+  padding:1.7rem;
   border-radius: 2rem;
   text-align: center;
   border: 0.2rem solid rgba(82, 17, 82, 0.546);
@@ -219,22 +219,217 @@ li a {
 
 
 .portfolio{
-  margin-bottom: 20px;
-  
+  margin-top: 10px;
+  margin-bottom:40px;
 }
 
+.card{
+  height:160px;
+  width:5 00px;
+  margin-left:11%;
+  margin-right: 5%;
+}
+
+.card-img-top{
+  height:260px;
+  width:300px;
+}
+
+.card:hover {
+  animation: zoomIn 0.3s forwards;
+  margin-bottom:10px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
 
+.container{
+  z-index: 12;
+  max-width: 1050px;
+  margin-top: 100px;
+  width: 90%;
+  background: #fff;
+  border-radius: 12px;
+  margin: 0 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+.container .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 20px;
+  margin-bottom: 5%;
 
 
+}
+.content .image-box{
+  max-width:50%;
+}
+.content .image-box img{
+  width: 100%;
+}
+.content .topic{
+  font-size: 22px;
+  font-weight: 500;
+  color: #ba24c2;
+}
+.content form{
+  width: 40%;
+  margin-right: 30px;
+}
+.content .input-box{
+  height: 50px;
+  width: 100%;
+  margin: 16px 0;
+  position: relative;
+}
+.content .input-box input{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  padding-left: 16px;
+  background: #fae9fb;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+.content .input-box input:focus,
+.content .input-box input:valid{
+  border-color: #ba24c2;
+  background-color: #fff;
+}
+.content .input-box label{
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  color: #636c72;
+  font-size: 15px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+.content .input-box input:focus ~ label,
+.content .input-box input:valid ~ label{
+  top: 0;
+  left: 12px;
+  display: 14px;
+  color: #ba24c2;
+  background: #fff;
+}
+.content .message-box{
+  min-height: 100px;
+  position: relative;
+}
+.content .message-box textarea{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  resize: none;
+  background: #fae9fb;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  outline: none;
+  transition:all 0.3s ease;
+}
+.content .message-box textarea:focus{
+  border-color: #ba24c2;
+  background-color: #fff;
+}
+.content .message-box label{
+  position: absolute;
+  font-size: 16px;
+  color: #636c72;
+  left: 18px;
+  top: 6px;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.content .message-box textarea:focus ~ label{
+  left: 12px;
+  top: -10px;
+  color: #ba24c2;
+  font-size: 14px;
+  background: #fff;
+}
+.content .input-box input[type="submit"]{
+  color: #fff;
+  background: #ba24c2;
+  padding-left: 0;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+.content .input-box input[type="submit"]:hover{
+  background-color: #d43ddb;
+}
+@media (max-width:1000px) {
+  .content .image-box{
+    max-width: 70%;
+  }
+  .content{
+    padding: 10px 0;
+  }
+}
+@media (max-width:900px) {
+  .content .image-box{
+    display: none;
+  }
+  .content form{
+    width: 100%;
+    margin-left: 30px;
+  }
 
+}
 
-
-
-
-
-
-
+  .footer {
+    background-color:rgb(29, 28, 28);
+    color: #f0f0f0;
+    padding: 40px 20px 20px;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .footer-logo h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .footer-nav,
+  .footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap ;
+  }
+  
+  .footer-nav a,
+  .footer-socials a {
+    color: #f0f0f0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-nav a:hover,
+  .footer-socials a:hover {
+    color: #d43ddb;
+  }
+  
+  .footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #bbb;
+  }
+  
 
 
 
