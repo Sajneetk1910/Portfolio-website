@@ -228,18 +228,20 @@
                   alt=""
                 />
               </div>
-              <form action="#">
+              <form  method="post"action="https://api.web3forms.com/submit" >
+                <input type="hidden" name="access_key" value="e225aefa-fd06-4665-86b7-65e92a24a79d">
+
                 <div class="topic">Send a message</div>
                 <div class="input-box">
-                  <input type="text" required />
+                  <input type="text" required  name="name"/>
                   <label>Enter your name</label>
                 </div>
                 <div class="input-box">
-                  <input type="text" required />
+                  <input type="text"  email="email" required />
                   <label>Enter your email</label>
                 </div>
                 <div class="message-box">
-                  <textarea type="text" required></textarea>
+                  <textarea type="text" name="message"required></textarea>
                   <label>Enter your message</label>
                 </div>
                 <div class="input-box">
