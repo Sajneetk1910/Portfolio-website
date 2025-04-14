@@ -5,7 +5,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 .logo1 {
   margin-top: 1rem;
   margin-left: 1rem;
@@ -644,6 +646,7 @@ li a {
 
 .dark-mode .skills-box {
   border-color: rgba(255, 255, 255, 0.5);
+  color:black;
 }
 
 .dark-mode .skills-box i {
