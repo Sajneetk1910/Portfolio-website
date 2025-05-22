@@ -26,6 +26,10 @@ nav {
   margin-right: 3rem;
 }
 
+#namelogo{
+  font-size:2rem;
+  margin-left: 1.5rem;
+}
 .navbar-nav .nav-link:hover {
   color: purple;
 }
@@ -45,6 +49,7 @@ nav {
   background: transparent;
   color: #000;
   font-size: 25px;
+  margin-right: 1.5rem;
 }
 
 #darkModeBtn:hover {
