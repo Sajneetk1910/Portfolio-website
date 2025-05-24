@@ -595,6 +595,76 @@ nav {
 .content .input-box input[type="submit"]:hover {
   background-color: #d43ddb;
 }
+
+
+
+@media (max-width: 992px) {
+  .container .content {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .content .image-box,
+  .content form {
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+  }
+
+  .content form {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content .topic {
+    font-size: 20px;
+  }
+
+  .content .input-box input,
+  .content .message-box textarea {
+    font-size: 15px;
+  }
+
+  .content .input-box label,
+  .content .message-box label {
+    font-size: 14px;
+  }
+
+  .content .input-box input[type="submit"] {
+    font-size: 16px;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    margin: 20px auto;
+    width: 95%;
+  }
+
+  .content .input-box,
+  .content .message-box {
+    margin: 12px 0;
+  }
+
+  .content .topic {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .content .input-box input,
+  .content .message-box textarea {
+    padding-left: 12px;
+  }
+
+  .content .input-box input[type="submit"] {
+    width: 100%;
+    padding: 14px;
+  }
+}
+
+
 /* footer */
 .footer {
   background-color: rgb(29, 28, 28);
