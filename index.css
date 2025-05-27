@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+ @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
 * {
   margin: 0;
@@ -395,14 +395,12 @@ nav {
   }
 }
 
-/* Project Section Title */
 .portfolio {
   margin-top: 10px;
   margin-bottom: 40px;
   text-align: center;
 }
 
-/* Responsive Card Styles */
 .card {
   flex: 1 1 100%;
   max-width: 500px;
@@ -414,19 +412,21 @@ nav {
   background-color: #fff;
 }
 
+.card-title{
+  text-align: center;
+  font-weight: bold;
+}
 .card:hover {
   animation: zoomIn 0.3s forwards;
   transform: scale(1.03);
 }
 
-/* Responsive Image */
 .card-img-top {
   width: 100%;
   height: 220px;
   object-fit: cover;
 }
 
-/* Zoom Animation */
 @keyframes zoomIn {
   from {
     transform: scale(1);
@@ -436,19 +436,16 @@ nav {
   }
 }
 
-/* Grid Layout Container (for card wrapper) */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 per row on desktop */
+  grid-template-columns: repeat(2, 1fr); 
   gap: 2rem;
   padding: 0 2rem;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* MEDIA QUERIES */
 
-/* Tablets: 1 card per row */
 @media (max-width: 768px) {
   .projects-grid {
     grid-template-columns: 1fr;
@@ -460,7 +457,6 @@ nav {
   }
 }
 
-/* Mobile Phones */
 @media (max-width: 480px) {
   .card-img-top {
     height: 180px;
